@@ -1,7 +1,10 @@
+### Listar todas as vagas
 GET http://localhost:8080/vagas
 
+### Buscar vaga por ID
 GET http://localhost:8080/vagas/1
 
+### Criar uma nova vaga
 POST http://localhost:8080/vagas
 Content-Type: application/json
 
@@ -13,6 +16,7 @@ Content-Type: application/json
   "idEmpresa": 3
 }
 
+### Atualizar a vaga de ID 1
 PUT http://localhost:8080/vagas/1
 Content-Type: application/json
 
@@ -24,4 +28,5 @@ Content-Type: application/json
   "idEmpresa": 1
 }
 
+### Deletar a vaga de ID 2
 DELETE http://localhost:8080/vagas/2
