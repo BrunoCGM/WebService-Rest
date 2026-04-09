@@ -1,0 +1,25 @@
+GET http://localhost:8080/estudantes
+
+GET http://localhost:8080/estudantes/1
+
+POST http://localhost:8080/estudantes
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "email": "joao.silva@email.com",
+  "nascimento": "2004-05-20",
+  "anoIngresso": 2023
+}
+
+PUT http://localhost:8080/estudantes/1
+Content-Type: application/json
+
+{
+  "nome": "Ana Paula Souza Editada",
+  "email": "ana.editada@email.com",
+  "nascimento": "2002-03-15",
+  "anoIngresso": 2020
+}
+
+DELETE http://localhost:8080/estudantes/2

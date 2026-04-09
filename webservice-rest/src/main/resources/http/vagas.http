@@ -1,0 +1,27 @@
+GET http://localhost:8080/vagas
+
+GET http://localhost:8080/vagas/1
+
+POST http://localhost:8080/vagas
+Content-Type: application/json
+
+{
+  "titulo": "Desenvolvedor Mobile",
+  "descricao": "Desenvolvimento de apps em Flutter e Kotlin.",
+  "publicacao": "2025-11-01",
+  "ativo": true,
+  "idEmpresa": 3
+}
+
+PUT http://localhost:8080/vagas/1
+Content-Type: application/json
+
+{
+  "titulo": "Desenvolvedor Java Sênior",
+  "descricao": "Atuação em projetos backend complexos com Spring Boot.",
+  "publicacao": "2025-10-01",
+  "ativo": true,
+  "idEmpresa": 1
+}
+
+DELETE http://localhost:8080/vagas/2

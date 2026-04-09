@@ -1,0 +1,23 @@
+GET http://localhost:8080/empresas
+
+GET http://localhost:8080/empresas/1
+
+POST http://localhost:8080/empresas
+Content-Type: application/json
+
+{
+  "nome": "Tech Solutions LTDA",
+  "cnpj": "55.666.777/0001-88",
+  "emailContato": "contato@techsolutions.com"
+}
+
+PUT http://localhost:8080/empresas/1
+Content-Type: application/json
+
+{
+  "nome": "Empresa Alfa Atualizada",
+  "cnpj": "12.345.678/0001-90",
+  "emailContato": "novoemail@empresa-alfa.com"
+}
+
+DELETE http://localhost:8080/empresas/2
